@@ -3,7 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Reservas;
+use App\Categoria;
+use App\Habitacion;
 use Illuminate\Http\Request;
+use Laracasts\Flash\Flash;
+
 
 class ReservasController extends Controller
 {
@@ -14,7 +18,9 @@ class ReservasController extends Controller
      */
     public function index()
     {
-        //
+        $reserva = Reservas::orderBy('id', 'Desc')->paginate(4);
+        
+        return view('reservas.index')->with('reserva', $reserva);
     }
 
     /**
@@ -24,7 +30,16 @@ class ReservasController extends Controller
      */
     public function create()
     {
-        return view('reservas.create');
+        $typeCategory = Categoria::all(['id', 'nombre'])->pluck('nombre', 'id');
+        $typeRoom = Habitacion::all(['id', 'numero_habitacion'])->pluck('numero_habitacion', 'id');
+        // $typeRoomFloor = Habitacion::all(['id', 'piso'])->pluck('piso', 'id');
+        
+
+        return view('reservas.create')
+        ->with('typeCategory', $typeCategory)
+        ->with('typeRoom', $typeRoom);
+        // ->with('typeRoomFloor', $typeRoomFloor);
+        
     }
 
     /**
@@ -35,7 +50,16 @@ class ReservasController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $reserva = Reservas::create($request->all());
+
+        $reserva->save();
+
+        $reserva->getCategory()->associate($reserva);
+        $reserva->getRoom()->associate($reserva);
+
+        Flash::success("La se ha registrado de forma exitosa");
+
+        return redirect('reservas');   
     }
 
     /**

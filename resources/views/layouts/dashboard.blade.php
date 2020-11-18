@@ -83,21 +83,16 @@
                                 <li><a href="{{ route('users.index')}}">Usuarios</a></li>
                                 <li><a href="{{ route('role.index')}}">Roles</a></li>
                             </ul>
+                        </ul>
 
-                            {{--Lista reservas--}}
-                            {{--  <li data-toggle="collapse" data-target="#reservas">
-                                <a href="#"><i class="fa fa-database"></i> Reservas <span class="arrow"></span></a>
-                            </li>
-                            <ul class="sub-menu collapse" id="reservas">
-                                <li><a href="{{ route('reservas.create') }}">Crear reservas</a></li>
-                            <li><a href="">Modificar reservas</a></li>
-                        </ul> --}}
+                        {{--Lista categorias--}}
+                        <li><a href="{{ route('category.index') }}"><i class="fa fa-cubes" aria-hidden="true"></i>Categorias</a></li>
 
                         {{--Lista habitaciones--}}
                         <li><a href="{{ route('habitaciones.index')}}"><i class="fa fa-bath" aria-hidden="true"></i>Habitaciónes</a></li>
 
-                        {{--Lista categorias--}}
-                        <li><a href="{{ route('category.index') }}"><i class="fa fa-cubes" aria-hidden="true"></i>Categorias</a></li>
+                        {{--Lista reservas--}}
+                        <li><a href="{{ route('reservas.index')}}"><i class="fa fa-bath" aria-hidden="true"></i>Reservas</a></li>
 
                         </ul>
                     </div>

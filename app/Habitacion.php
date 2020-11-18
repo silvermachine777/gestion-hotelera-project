@@ -16,4 +16,8 @@ class Habitacion extends Model
     public function categorias(){
         return $this->belongsTo(Categoria::class);
     }
+
+    public function getRoom(){
+        return $this->hasMany(Habitacion::class);
+    }
 }

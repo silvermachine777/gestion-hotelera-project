@@ -14,4 +14,8 @@ class Categoria extends Model
     public function habitaciones(){
         return $this->hasMany(Habitacion::class);
     }
+
+    public function getRoom(){
+        return $this->hasMany(Habitacion::class);
+    }
 }

@@ -1990,6 +1990,7 @@ input, select, textarea {
 			.icon.featured:before {
 				font-size: 5em;
 				line-height: 1em;
+				color: #06B9E7BA;
 			}
 
 		.icon > .label {

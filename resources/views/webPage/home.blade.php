@@ -20,28 +20,7 @@
             <h1 id="logo"><a href="#">Brisas del Mar<span></a></h1>
             <nav id="nav">
                 <ul>
-                    <li class="current"><a href="#">Quienes somos</a></li>
-                    <li class="current"><a href="/formLogin">Intranet</a></li>
-                    {{--  <li class="submenu">
-                        <a href="#">Layouts</a>
-                        <ul>
-                            <li><a href="left-sidebar.html">Left Sidebar</a></li>
-                            <li><a href="right-sidebar.html">Right Sidebar</a></li>
-                            <li><a href="no-sidebar.html">No Sidebar</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li class="submenu">
-                                <a href="#">Submenu</a>
-                                <ul>
-                                    <li><a href="#">Dolore Sed</a></li>
-                                    <li><a href="#">Consequat</a></li>
-                                    <li><a href="#">Lorem Magna</a></li>
-                                    <li><a href="#">Sed Magna</a></li>
-                                    <li><a href="#">Ipsum Nisl</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="#" class="button primary">Sign Up</a></li>  --}}
+                    <li class="current"><a href="/formLogin">Intranet</a></li>                   
                 </ul>
             </nav>
         </header>
@@ -72,56 +51,6 @@
 
         <!-- Main -->
         <article id="main">
-
-            {{--  <header class="special container">
-                <span class="icon solid fa-chart-bar"></span>
-                <h2>As this is my <strong>twentieth</strong> freebie for HTML5 UP
-                    <br />
-                    I decided to give it a really creative name.</h2>
-                <p>Turns out <strong>Twenty</strong> was the best I could come up with. Anyway, lame name aside,
-                    <br />
-                    it's minimally designed, fully responsive, built on HTML5/CSS3,
-                    and, like all my stuff,
-                    <br />
-                    released for free under the <a href="http://html5up.net/license">Creative Commons Attribution
-                        3.0</a> license. Have fun!
-                </p>
-            </header>  --}}
-
-            {{--  <!-- One -->
-            <section class="wrapper style2 container special-alt">
-                <div class="row gtr-50">
-                    <div class="col-8 col-12-narrower">
-
-                        <header>
-                            <h2>Behold the <strong>icons</strong> that visualize what you’re all about. or just take up
-                                space. your call bro.</h2>
-                        </header>
-                        <p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu comteger ut fermentum
-                            lorem. Lorem ipsum dolor sit amet. Sed tristique purus vitae volutpat ultrices. eu elit eget
-                            commodo. Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo.</p>
-                        <footer>
-                            <ul class="buttons">
-                                <li><a href="#" class="button">Find Out More</a></li>
-                            </ul>
-                        </footer>
-
-                    </div>
-                    <div class="col-4 col-12-narrower imp-narrower">
-
-                        <ul class="featured-icons">
-                            <li><span class="icon fa-clock"><span class="label">Feature 1</span></span></li>
-                            <li><span class="icon solid fa-volume-up"><span class="label">Feature 2</span></span></li>
-                            <li><span class="icon solid fa-laptop"><span class="label">Feature 3</span></span></li>
-                            <li><span class="icon solid fa-inbox"><span class="label">Feature 4</span></span></li>
-                            <li><span class="icon solid fa-lock"><span class="label">Feature 5</span></span></li>
-                            <li><span class="icon solid fa-cog"><span class="label">Feature 6</span></span></li>
-                        </ul>
-
-                    </div>
-                </div>
-            </section>  --}}
-
             <!-- Two -->
             <section class="wrapper style1 container special" id="about">
                 <div class="row">
@@ -131,9 +60,7 @@
                             <span class="icon solid featured fa-check"></span>
                             <header>
                                 <h3>Tranquilidad</h3>
-                            </header>
-                            <p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit
-                                dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
+                            </header>                            
                         </section>
 
                     </div>
@@ -144,8 +71,6 @@
                             <header>
                                 <h3>Familia</h3>
                             </header>
-                            <p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit
-                                dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
                         </section>
 
                     </div>
@@ -156,8 +81,6 @@
                             <header>
                                 <h3>Descanso</h3>
                             </header>
-                            <p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit
-                                dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
                         </section>
 
                     </div>
@@ -175,26 +98,25 @@
                     <div class="col-6 col-12-narrower">
 
                         <section>
-                            <a href="#" class="image featured"><img src="TWENTY/images/familiar.jpg" alt="" /></a>
                             <header>
-                                <h3>Suite Presidencial</h3>
+                                <h3><strong>HABITACIÓN PARA CINCO PERSONAS</strong></h3>
                             </header>
-                            <p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper
-                                sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit
-                                lorem ipsum dolore.</p>
+                            <a href="#" class="image featured"><img src="TWENTY/images/hab4.jpeg" alt="" /></a>
+                            <p>Excelente habitación con cama doble, camarote y cama sencila. Tv, nevera, aire acondicionado, ventilador, baño privado.</p>
+                            
                         </section>
 
                     </div>
                     <div class="col-6 col-12-narrower">
 
                         <section>
-                            <a href="#" class="image featured"><img src="TWENTY/images/familiar.jpg" alt="" /></a>
                             <header>
-                                <h3>Suite Platinum</h3>
+                                <h3><strong>HABITACIÓN PARA CUATRO PERSONAS</strong></h3>
                             </header>
-                            <p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper
-                                sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit
-                                lorem ipsum dolore.</p>
+                            <a href="#" class="image featured"><img src="TWENTY/images/hab4.jpeg" alt="" /></a>
+                            <p>Excelente habitación con cama doble y camarote. Tv, nevera, aire acondicionado, ventilador, baño privado.</p>
+                            
+                            
                         </section>
 
                     </div>
@@ -203,26 +125,26 @@
                     <div class="col-6 col-12-narrower">
 
                         <section>
-                            <a href="#" class="image featured"><img src="TWENTY/images/familiar.jpg" alt="" /></a>
                             <header>
-                                <h3>Suite Junior</h3>
+                                <h3><strong>HABITACIÓN PARA TRES PERSONAS</strong></h3>
                             </header>
-                            <p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper
-                                sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit
-                                lorem ipsum dolore.</p>
+                            <a href="#" class="image featured"><img src="TWENTY/images/hab3.jpeg" alt="" /></a>
+                            <p>Excelente habitación con cama doble y cama sencilla. Tv, nevera, aire acondicionado, ventilador, baño privado.</p>
+                            
+                            
                         </section>
 
                     </div>
                     <div class="col-6 col-12-narrower">
 
                         <section>
-                            <a href="#" class="image featured"><img src="TWENTY/images/familiar.jpg" alt="" /></a>
                             <header>
-                                <h3>Habitacion Sencilla</h3>
+                                <h3><strong>HABITACIÓN PARA DOS PERSONAS</strong></h3>
                             </header>
-                            <p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper
-                                sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit
-                                lorem ipsum dolore.</p>
+                            <a href="#" class="image featured"><img src="TWENTY/images/hab3.jpeg" alt="" /></a>
+                            <p>Excelente habitación con cama doble. Tv, nevera, aire acondicionado, ventilador, baño privado.</p>
+                            
+                            
                         </section>
 
                     </div>
