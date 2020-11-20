@@ -42,13 +42,9 @@ Reserva
                         Habitación quintuple
                     @endif 
                 </td>
+                <td scope="col-sm">{{$reservas->numero_habitacion}}</td>
                 <td scope="col-sm">
-                @isset( $reservas->habitación_id[0]->numero_habitacion )
-                    {{$reservas->habitación_id[0]->numero_habitacion}}
-                @endisset 
-                </td>
-                <td scope="col-sm">
-                    <a href="" class="btn btn-warning"><i class="fa fa-pencil" aria-hidden="true"></i>
+                    <a href="{{ route('reservas.edit', $reservas->id)}}" class="btn btn-warning"><i class="fa fa-pencil" aria-hidden="true"></i>
                         Editar</a>
                     <a href="" onclick="return confirm('Desea eliminar la categoria seleccionada?')"
                         class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i>
@@ -63,7 +59,7 @@ Reserva
         </tbody>
     </table>
 
-    {!! $reserva->render() !!}
+    {{--  {!! $reserva->render() !!}  --}}
 
 </div>
 

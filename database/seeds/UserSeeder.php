@@ -91,6 +91,7 @@ class UserSeeder extends Seeder
 
         $permissionAll[] = $permission->id;
         
+        //User permission
         $permission = Permission::create([
             'name'          =>  'List user',
             'slug'          =>  'user.index',
@@ -127,6 +128,129 @@ class UserSeeder extends Seeder
             'name'          =>  'Destroy user',
             'slug'          =>  'user.destroy',
             'description'   =>  'A user can destroy user',
+        ]);
+
+        $permissionAll[] = $permission->id;
+
+        //Categories permission
+        $permission = Permission::create([
+            'name'          =>  'List categoria',
+            'slug'          =>  'categoria.index',
+            'description'   =>  'A user can list categoria',
+        ]);
+
+        $permissionAll[] = $permission->id;
+
+        $permission = Permission::create([
+            'name'          =>  'Show categoria',
+            'slug'          =>  'categoria.show',
+            'description'   =>  'A user can show categoria',
+        ]);
+
+        $permissionAll[] = $permission->id;
+
+        $permission = Permission::create([
+            'name'          =>  'Create categoria',
+            'slug'          =>  'categoria.create',
+            'description'   =>  'A user can create categoria',
+        ]);
+
+        $permissionAll[] = $permission->id;
+
+        $permission = Permission::create([
+            'name'          =>  'Edit categoria',
+            'slug'          =>  'categoria.edit',
+            'description'   =>  'A user can edit categoria',
+        ]);
+
+        $permissionAll[] = $permission->id;
+
+        $permission = Permission::create([
+            'name'          =>  'Destroy categoria',
+            'slug'          =>  'categoria.destroy',
+            'description'   =>  'A user can destroy categoria',
+        ]);
+
+        $permissionAll[] = $permission->id;
+        
+        //Habitaciones permission
+        $permission = Permission::create([
+            'name'          =>  'List habitaciones',
+            'slug'          =>  'habitaciones.index',
+            'description'   =>  'A user can list habitaciones',
+        ]);
+
+        $permissionAll[] = $permission->id;
+
+        $permission = Permission::create([
+            'name'          =>  'Show habitaciones',
+            'slug'          =>  'habitaciones.show',
+            'description'   =>  'A user can show habitaciones',
+        ]);
+
+        $permissionAll[] = $permission->id;
+
+        $permission = Permission::create([
+            'name'          =>  'Create habitaciones',
+            'slug'          =>  'habitaciones.create',
+            'description'   =>  'A user can create habitaciones',
+        ]);
+
+        $permissionAll[] = $permission->id;
+
+        $permission = Permission::create([
+            'name'          =>  'Edit habitaciones',
+            'slug'          =>  'habitaciones.edit',
+            'description'   =>  'A user can edit habitaciones',
+        ]);
+
+        $permissionAll[] = $permission->id;
+
+        $permission = Permission::create([
+            'name'          =>  'Destroy habitaciones',
+            'slug'          =>  'habitaciones.destroy',
+            'description'   =>  'A user can destroy habitaciones',
+        ]);
+
+        $permissionAll[] = $permission->id;
+
+        //reservas permission
+        $permission = Permission::create([
+            'name'          =>  'List reservas',
+            'slug'          =>  'reservas.index',
+            'description'   =>  'A user can list reservas',
+        ]);
+
+        $permissionAll[] = $permission->id;
+
+        $permission = Permission::create([
+            'name'          =>  'Show reservas',
+            'slug'          =>  'reservas.show',
+            'description'   =>  'A user can show reservas',
+        ]);
+
+        $permissionAll[] = $permission->id;
+
+        $permission = Permission::create([
+            'name'          =>  'Create reservas',
+            'slug'          =>  'reservas.create',
+            'description'   =>  'A user can create reservas',
+        ]);
+
+        $permissionAll[] = $permission->id;
+
+        $permission = Permission::create([
+            'name'          =>  'Edit reservas',
+            'slug'          =>  'reservas.edit',
+            'description'   =>  'A user can edit reservas',
+        ]);
+
+        $permissionAll[] = $permission->id;
+
+        $permission = Permission::create([
+            'name'          =>  'Destroy reservas',
+            'slug'          =>  'reservas.destroy',
+            'description'   =>  'A user can destroy reservas',
         ]);
 
         $permissionAll[] = $permission->id;

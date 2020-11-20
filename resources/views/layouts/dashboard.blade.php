@@ -80,8 +80,8 @@
                                     Administración de Usuarios <span class="arrow"></span></a>
                             </li>
                             <ul class="sub-menu collapse" id="users">
-                                <li><a href="{{ route('users.index')}}">Usuarios</a></li>
                                 <li><a href="{{ route('role.index')}}">Roles</a></li>
+                                <li><a href="{{ route('users.index')}}">Usuarios</a></li>
                             </ul>
                         </ul>
 

@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Laracasts\Flash\Flash;
 use Symfony\Component\Console\Input\Input;
+use Illuminate\Support\Facades\Gate;
 
 class HabitacionController extends Controller
 {
@@ -18,6 +19,8 @@ class HabitacionController extends Controller
      */
     public function index()
     {
+        Gate::authorize('haveaccess', 'habitaciones.index');
+
         $habitacion = Habitacion::orderBy('id', 'Desc')->paginate(4);
         return view('habitaciones.index')->with('habitacion', $habitacion);
     }
@@ -29,6 +32,8 @@ class HabitacionController extends Controller
      */
     public function create()
     {
+        Gate::authorize('haveaccess', 'habitaciones.create');
+
         $typeRoom = Categoria::all(['id', 'nombre'])->pluck('nombre', 'id');
 
         return view('habitaciones.create')->with('typeRoom', $typeRoom);
@@ -42,6 +47,8 @@ class HabitacionController extends Controller
      */
     public function store(Request $request)
     {
+        Gate::authorize('haveaccess', 'habitaciones.create');
+
         $room = Habitacion::create($request->all());        
 
         $room->save();
@@ -74,6 +81,8 @@ class HabitacionController extends Controller
      */
     public function edit($id)
     {
+        Gate::authorize('haveaccess', 'habitaciones.edit');
+
         $typeRoom = Categoria::get()
         ->pluck('nombre');
 
@@ -93,6 +102,8 @@ class HabitacionController extends Controller
      */
     public function update(Request $request, $id)
     {
+        Gate::authorize('haveaccess', 'habitaciones.update');
+
         $room = Habitacion::find($id);
 
         $room->descripcion = $request->descripcion;
@@ -116,6 +127,8 @@ class HabitacionController extends Controller
      */
     public function destroy($id)
     {
+        Gate::authorize('haveaccess', 'habitaciones.destroy');
+        
         $room = Habitacion::find($id);
 
         $room->delete();

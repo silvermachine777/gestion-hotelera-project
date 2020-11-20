@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Categoria;
 use Illuminate\Http\Request;
 use Laracasts\Flash\Flash;
+use Illuminate\Support\Facades\Gate;
+
 
 class CategoriaController extends Controller
 {
@@ -15,7 +17,9 @@ class CategoriaController extends Controller
      */
     public function index()
     {
-        $categories = Categoria::orderBy('id', 'Asc')->paginate(4);
+        Gate::authorize('haveaccess', 'categoria.index');
+
+        $categories = Categoria::orderBy('id', 'Desc')->paginate(4);
         return view('category.index')->with('categories', $categories);
     }
 
@@ -26,6 +30,8 @@ class CategoriaController extends Controller
      */
     public function create()
     {
+        Gate::authorize('haveaccess', 'categoria.create');
+
         return view('category.create');
     }
 
@@ -37,6 +43,8 @@ class CategoriaController extends Controller
      */
     public function store(Request $request)
     {
+        Gate::authorize('haveaccess', 'categoria.create');
+
         $categories = Categoria::create($request->all());
 
         $categories->save();
@@ -65,6 +73,8 @@ class CategoriaController extends Controller
      */
     public function edit($id)
     {
+        Gate::authorize('haveaccess', 'categoria.edit');
+
         $categories = Categoria::find($id);
         return view('category.edit')->with('categories', $categories);
     }
@@ -78,6 +88,8 @@ class CategoriaController extends Controller
      */
     public function update(Request $request, $id)
     {
+        Gate::authorize('haveaccess', 'categoria.update');
+
         $categories = Categoria::find($id);
 
         $categories->nombre = $request->nombre;
@@ -99,6 +111,8 @@ class CategoriaController extends Controller
      */
     public function destroy($id)
     {
+        Gate::authorize('haveaccess', 'categoria.destroy');
+
         $categories = Categoria::find($id);
         $categories->delete();
 
